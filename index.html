@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mayara Ramos </title>
+
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li> <a href="#home"> Inicio </a></li>
+                <li> <a href="#service"> Serviços </a></li>
+                <li> <a href="#agendar"> Agendar </a></li>
+            </ul>
+        </nav>
+
+        <article>
+                    <div class="desc-service">
+                        <h1>
+                            Beleza, transformação e cuidado para valorizar sua identidade.
+                        </h1>
+                        <p>
+                            Especialista em mega hair, liso perfeito em qualquer cabelo e tranças, com atendimento local e a
+                            domicílio.
+                    </p>
+                    <div class="btn">
+                        <a href="#agendar"> Agendar </a>
+                    </div>
+                </div>
+                <img src="./src/image/image-header.png" alt="">
+        </article>
+    </header>
+
+    <main>
+        <div class="container">
+
+        <section id="service" class="service">
+            <h2 class="title-section">
+                Serviços
+            </h2>
+            <div class="cards-services">
+                <div class="card card-liso">
+                    <img src="./src/image/liso.png" alt="Cabelo Liso">
+                    <p class="liso">
+                        Liso perfeito
+                    </p>
+                </div>
+                <div class="card card-mega">
+                    <img src="./src/image/mega-hair.png" alt="Aplicação de Mega Hair">
+                    <p class="mega">
+                        Mega Hair
+                    </p>
+                </div>
+                <div class="card card-tranca">
+                    <img src="./src/image/trança.png" alt="Cabelo com aplicação de trança">
+                    <p class="tranca">
+                        Trança
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="differentiating-services">
+            <h3 class="title">
+                Atendimento com atenção, técnica e foco em resultados que valorizam sua beleza.
+            </h3>
+
+            <div class="cards-desc-service">
+                <div class="card-desc">
+                    <img src="./src/image/icon-hair.png" alt="">
+                    <h4> Mega Hair Especializado </h4>
+                    <p> Aplicação com resultado natural, confortável e duradouro. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="title-section">
+                Depoimentos
+            </h2>
+            <p class="subtitle">
+                Transformação com carinho em cada história
+            </p>
+            <div class="cards-testimonials">
+
+                <div class="card-testimonials">
+                    <p>
+                        "Fiz mega hair aqui e o resultado ficou tão
+                        natural que parece cabelo meu! A aplicação foi super cuidadosa,
+                        sem desconforto nenhum. Super indico, atendimento nota 10!"
+                    </p>
+                    <div class="user">
+                        <img src="./src/image/foto-user.png" alt="Foto de perfil usuario">
+                        <p class="name">
+                            Mariana Silva
+                        </p>
+                    </div>
+                </div>
+                <div class="card-testimonials">
+                    <p>
+                        "Meu cabelo cacheado sempre foi volume demais, mas o liso perfeito aqui mudou tudo. Ficou
+                        alinhado, brilhante e sem danificar. Atendimento a domicílio foi perfeito pra minha rotina!"
+                    </p>
+                    <div class="user">
+                        <img src="./src/image/foto-user-2.png" alt="Foto de perfil usuario">
+                        <p class="name">
+                            Camila Oliveira
+                        </p>
+                    </div>
+                </div>
+                <div class="card-testimonials">
+                    <p>
+                        "As tranças ficaram exatamente como eu sonhava, com acabamento impecável e super duráveis. A
+                        manutenção que ela indicou fez toda diferença. Profissional que entende mesmo de cabelo!"
+                    </p>
+                    <div class="user">
+                        <img src="./src/image/foto-user-3.png" alt="Foto de perfil usuario">
+                        <p class="name">
+                            Larissa Santos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </div>
+        <section id="agendar" class="agendar">
+            <h2 class="title-form">
+                Agenda
+            </h2>
+            <p class="subtitle-form">
+                Agende seu atendimento com praticidade e tenha um cuidado pensado para você.
+            </p>
+            
+            <form>
+                <div class="input-group names">
+                    <div class="input-box">
+                        <label for="name"> Nome </label>
+                        <input type="text" class="name" id="name" placeholder="Nome">
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname"> Sobrenome </label>
+                        <input type="text" class="lastname" id="lastName" placeholder="Sobrenome">
+                    </div>
+                </div>
+
+                <div class="input-group servicesAndEmail">
+                    <div class="input-box">
+                        <label for="name"> Telefone </label>
+                        <input type="tel" class="name" id="phone" placeholder="(61) 99999-9999">
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname"> Serviço </label>
+                        <select name="" id="serviceForm">
+                            <option value="Casamento"> Liso Saudavel </option>
+                            <option value="Debutante"> Mega Hair </option>
+                            <option value="Evento"> Trança </option>
+                            <option value="Confraternização "> Escova </option>
+                            <option value="Aniversarios"> Hidradatação </option>
+                            <option value="Outros"> Outros</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="email"> Conte um pouco sobre você </label>
+                    <textarea name="descrEvent" id="descService"
+                        placeholder="Sua mensagem"></textarea>
+                </div>
+                <button class="btn-form" id="subtmit_button" type="submit">
+                    Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h5 class="may"> May </h5>
+        <div class="rede">
+            <p> Fale conosco e descubra o cuidado ideal para o seu cabelo.</p>
+            <div class="rede-icons">
+                <a href=""> <i class="fa-brands fa-whatsapp"></i></a>                    
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>                    
+            </div>
+        </div>
+        <h5 class="ramos"> Ramos </h5>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

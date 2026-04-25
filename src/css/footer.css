@@ -1,0 +1,46 @@
+footer {
+    position: relative;
+    height: 40vh;
+}
+
+.rede {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+
+    p {
+        text-align: center;
+        color: var(--purple-200);
+        max-width: 200px;
+    }
+}
+
+h5 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: var(--fredoka);
+}
+
+.may {
+    position: relative;
+    top: 20px;
+    left: -25px;
+
+    background: linear-gradient(160deg, #A09BBF 20%, var(--purple-800) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ramos {
+    position: relative;
+    color: linear-gradient(102deg, #A09BBF 46.08%, #5549A6 94.06%);
+    right: -215px;
+    
+    background: linear-gradient(160deg, #A09BBF 20%, var(--purple-800) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
