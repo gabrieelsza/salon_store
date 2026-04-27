@@ -13,17 +13,40 @@ footer {
     p {
         text-align: center;
         color: var(--purple-200);
-        max-width: 200px;
+        max-width: 350px;
+        font-size: 1.5rem;
+    }
+
+    i {
+        font-size: 2rem;
+        margin-top: 1rem;
+        color: var(--purple-200);
+        
+        &:hover {
+            color: var(--purple-800);
+            cursor: pointer;
+        }
     }
 }
 
-h5 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-family: var(--fredoka);
+.may {
+    margin-top: 5rem;
 }
 
-.may {
+.ramos {
+    display: flex;
+    position: relative;
+    left: 58%;
+    margin: 4rem 0rem 6rem 0;
+}
+
+/* h5 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: var(--fredoka); 
+} */
+
+/* .may {
     position: relative;
     top: 20px;
     left: -25px;
@@ -43,4 +66,4 @@ h5 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */

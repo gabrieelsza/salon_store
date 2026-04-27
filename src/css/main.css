@@ -98,12 +98,20 @@
     }
 
     .cards-desc-service {
+        display: flex;
+        max-width: 280px;
+        margin: 0 auto;
         
         .card-desc {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            padding: 2rem;
+            margin: 0 auto;
+
+            border-radius: 2rem;
+            background: #A09BBF;
             
             img {
                 margin-bottom: 2rem;
@@ -206,21 +214,15 @@
                 color: var(--white-200);
             }
             
-            input, select {
+            input {
                 font-family: var(--poppins);
                 padding: .5rem 1rem;
                 border-radius: .5rem;
                 border: none;
                 width: 100%;
-                
                 color: var(#CCC);
-
-                option {
-                    color: var(#ccc);
-                    font-family: var(--poppins);
-                    font-weight: 300;
-                }
             }
+            
             
             textarea {
                 font-family: var(--poppins);
@@ -253,4 +255,20 @@
                 cursor: pointer;
             }
         }
+}
+
+select {
+    height: 6.2vh;
+    font-family: var(--poppins);
+    border-radius: .5rem;
+    border: none;
+    width: 100%;  
+    padding: 0 .7rem;
+    color: var(#ccc);
+
+    option {
+        color: var(#ccc);
+        font-family: var(--poppins);
+        font-weight: 300;
+    }
 }
