@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lexend:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -13,8 +13,7 @@
     --white-200: #F2F2EB; 
 
     --lexend: "Lexend", sans-serif; 
-    --poppins: "Poppins", sans-serif; 
-    --fredoka: "Fredoka", sans-serif; 
+    --cormorant: "Cormorant Garamond", sans-serif; 
 }
 
 body {
@@ -32,12 +31,12 @@ a {
 }
 
 p {
-    font-family: var(--fredoka);
+    font-family: var(--lexend);
     font-weight: 300;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: var(--poppins);
+    font-family: var(--cormorant);
 }
 
 select, input, button {
@@ -50,4 +49,33 @@ select, input, button {
 
 .swiper-pagination {
     filter: blur();
+}
+
+.btn-agendar-desktop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: black;
+    border-radius: 1.5rem;
+    padding: 1rem 0;
+    
+    i, a {
+        color: var(--white-200);
+        font-size: .8rem;
+    }
+}
+
+.btn-service {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    padding: 1rem 0;
+    color: black;
+}
+
+span {
+    color: var(--purple-800);
 }

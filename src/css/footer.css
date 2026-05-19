@@ -1,69 +1,110 @@
 footer {
-    position: relative;
-    height: 40vh;
-}
+    background-color: black;
+    padding: 2rem;
 
-.rede {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
+    
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 1rem;
+        color: var(--white-200);
+    }
+    
+    .text-footer {
+        color: var(--white-200);
+        font-size: .8rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact {
+        h2 {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-family: var(--lexend);
+            font-weight: 300;
+            margin-top: 1rem;
+            color: var(--white-200);
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
 
-    p {
-        text-align: center;
-        color: var(--purple-200);
-        max-width: 350px;
-        font-size: 1.5rem;
+            li {
+                display: flex;
+                gap: 1rem;
+                font-size: 1rem;
+                color: var(--white-200);
+                align-items: center;
+            }
+        }
+
     }
 
-    i {
-        font-size: 2rem;
-        margin-top: 1rem;
-        color: var(--purple-200);
+    .hours {
+        h2 {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-family: var(--lexend);
+            font-weight: 300;
+            margin-top: 1rem;
+            color: var(--white-200);
+            margin-top: 2rem;
+        }
         
-        &:hover {
-            color: var(--purple-800);
-            cursor: pointer;
+        .hours-disponible {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: var(--white-200);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+    }
+
+    .btn-agendar-desktop {
+        background-color: var(--white-200);
+        a {
+            color: black;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) { 
+    .container-footer {
+        width: 65%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: start;
+        gap: 3rem;
+    
+        .title {
+            max-width: 60%; 
+            
+            h3 {
+                font-size: 3rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
+        
+        .hours {
+            max-width: 60%; 
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                margin-top: 0;
+            }
         }
     }
 }
-
-.may {
-    margin-top: 5rem;
-}
-
-.ramos {
-    display: flex;
-    position: relative;
-    left: 58%;
-    margin: 4rem 0rem 6rem 0;
-}
-
-/* h5 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-family: var(--fredoka); 
-} */
-
-/* .may {
-    position: relative;
-    top: 20px;
-    left: -25px;
-
-    background: linear-gradient(160deg, #A09BBF 20%, var(--purple-800) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.ramos {
-    position: relative;
-    color: linear-gradient(102deg, #A09BBF 46.08%, #5549A6 94.06%);
-    right: -215px;
-    
-    background: linear-gradient(160deg, #A09BBF 20%, var(--purple-800) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */

@@ -22,37 +22,96 @@
 <body>
     <header>
         <nav>
-            <ul class="nav-list">
-                <li> <a href="#home"> Inicio </a></li>
-                <li> <a href="#service"> Serviços </a></li>
-                <li> <a href="#agendar"> Agendar </a></li>
-            </ul>
+            <div class="nav-logo">
+                <h2>
+                    Mayara Ramos
+                </h2>
+                <p>
+                    Salão · Beleza Capilar
+                </p>
+            </div>
+            <div class="btn-mobile">
+                <button> <i class="fa-solid fa-bars"></i> </button>
+            </div>
+            <div class="bar-nav-desktop">
+                <ul>
+                    <li><a href="#"></a> Sobre </li>
+                    <li><a href="#"></a> Serviços </li>
+                    <li><a href="#"></a> Diferenciais </li>
+                    <li><a href="#"></a> Galeria </li>
+                    <li><a href="#"></a> Depoimentos </li>
+                    <li><a href="#"></a> Agendamento </li>
+                </ul>
+            </div>
+            <div class="btn-agendar-desktop">
+                <a href="#"> Agendar pelo Whatsapp </a>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
         </nav>
 
         <article>
-            <div class="desc-service desc-animation">
-                <h1>
-                    Beleza, transformação e cuidado para valorizar sua identidade.
-                </h1>
-                <p>
-                    Especialista em mega hair, liso perfeito em qualquer cabelo e tranças, com atendimento local e a
-                    domicílio.
-                </p>
-                <div class="btn">
-                    <a href="#agendar"> Agendar </a>
+            <div class="desc-service">
+                <div class="article-info">
+                    <i class="fa-solid fa-circle"></i>
+                    <p> Beleza com técnica e cuidado </p>
+                </div>
+                <h1> Sua melhor versão começa <span> por aqui. </span> </h1>
+                <p> Mega hair, liso perfeito e tranças com atendimento personalizado. Uma experiência delicada, feita
+                    para realçar a sua autoestima e cuidar de cada fio com a atenção que ele merece. </p>
+                <div class="btn-nav-contact">
+                    <div class="btn-agendar-desktop">
+                        <a href="#" class="wpp"> Agendar pelo Whatsapp </a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <a href="#" class="btn-service"> Conhecer serviços </a>
+                </div>
+                <div class="info-article">
+                    <div class="tecnica">
+                        <p> +10 </p>
+                        <p class="tecnica-text"> anos de técnica </p>
+                    </div>
+
+                    <div class="tecnica">
+                        <p> 1.2k </p>
+                        <p class="tecnica-text"> clientes felizes </p>
+                    </div>
+
+                    <div class="tecnica">
+                        <p> 100% </p>
+                        <p class="tecnica-text"> atenção em você </p>
+                    </div>
                 </div>
             </div>
-            <img class="image-animation" src="./src/image/image-header.png" alt="">
+            <div class="image-header">
+                <img src="./src/image/hidratacao-leve.jpg" alt="">
+            </div>
         </article>
     </header>
 
     <main>
         <div class="container">
+            <section class="service-desc">
+                <h2 class="title-section-new">
+                    O salão
+                </h2>
+                <h3>
+                    Um espaço dedicado à sua <span> beleza </span> e autoestima.
+                </h3>
+                <p>
+                    O Belle Cheveux nasceu do desejo de oferecer mais do que um serviço: uma experiência feita com
+                    técnica apurada, escuta atenta e olhar cuidadoso para cada cliente. Aqui, cada fio é tratado como
+                    único — porque cada mulher é única.
+                </p>
+            </section>
 
             <section id="service" class="service">
                 <h2 class="title-section">
                     Serviços
                 </h2>
+                <p>
+                    Do mega hair sob medida às tranças autorais — tudo executado com técnica, delicadeza e produtos de
+                    alta performance
+                </p>
                 <div class="cards-services">
                     <div class="card card-liso headline-easy">
                         <img src="./src/image/liso.png" alt="Cabelo Liso">
@@ -79,35 +138,35 @@
                 <h3 class="title">
                     Atendimento com atenção, técnica e foco em resultados que valorizam sua beleza.
                 </h3>
-                <div class="swiper mySwiper">
-                    <div class="cards-desc-service swiper-wrapper">
-                        <div class="card-desc swiper-slide">
+                <div class="container-differentiating">
+                    <div class="cards-desc-service">
+                        <div class="card-desc">
                             <img src="./src/image/icon-hair.png" alt="">
-                            <h4> Mega Hair Especializado </h4>
+                            <h4> Mega Hair </h4>
                             <p> Aplicação com resultado natural, confortável e duradouro. </p>
                         </div>
-                        <div class="card-desc swiper-slide">
+                        <div class="card-desc">
                             <img src="./src/image/icon-fatasy.png" alt="">
                             <h4> Liso perfeito
                             </h4>
-                            <p> Alinhamento pensado para diferentes tipos de cabelo,  com beleza e segurança. </p>
+                            <p> Alinhamento pensado para diferentes tipos de cabelo, com beleza e segurança. </p>
                         </div>
-                        <div class="card-desc swiper-slide">
+                        <div class="card-desc">
                             <img src="./src/image/icon-oingtal.png" alt="">
-                            <h4> Tranças Personalizadas   </h4>
+                            <h4> Tranças Personalizadas </h4>
                             <p> Estilos que valorizam sua identidade e seu momento. </p>
                         </div>
-                        <div class="card-desc swiper-slide">
+                        <div class="card-desc">
                             <img src="./src/image/ixon-car.png" alt="">
                             <h4> Atendimento a Domicílio </h4>
                             <p> Mais praticidade para você com conforto e atenção. </p>
                         </div>
-                        <div class="card-desc swiper-slide">
+                        <div class="card-desc">
                             <img src="./src/image/icon-heart.png" alt="">
-                            <h4> Atenção em Cada Etapa   </h4>
+                            <h4> Atenção em Cada Etapa </h4>
                             <p> Do primeiro contato ao resultado final, com cuidado e orientação. </p>
                         </div>
-                        <div class="card-desc swiper-slide">
+                        <div class="card-desc">
                             <img src="./src/image/icon-leaf.png" alt="">
                             <h4> Manutenção e Hidratação </h4>
                             <p> Cuidado contínuo para manter os fios bonitos e saudáveis. </p>
@@ -165,66 +224,84 @@
                     </div>
                 </div>
             </section>
+            <section class="galeria">
+                <h2> Galeria </h2>
+                <h3> Resultados que falam por si. </h3>
+                <p> Antes e depois reais — feitos com técnica, paciência e o olhar treinado para cada detalhe. </p>
+                <div class="galeria-photos">
+                    <img src="./src/image/mega.jpg" alt="" class="image-large">
+                    <div class="grid-colums">
+                        <img src="./src/image/after-before.jpg" alt="" class="img-desktop">
+                        <img src="./src/image/liso-natural.jpg" alt="">
+                        <img src="./src/image/tranca-modelo.jpg" alt="">
+                        <img src="./src/image/hidratacao-leve.jpg" alt="" class="img-desktop">
+                        <img src="./src/image/salon.jpg" alt="" class="img-desktop">
+                        <img src="./src/image/tranca-modelo.jpg" alt="">
+                        <img src="./src/image/liso-natural.jpg" alt="">
+                    </div>
+                </div>
+            </section>
 
+            <section class="agendar">
+                <h2> Agende agora </h2>
+                <h3> Pronta para se sentir ainda mais linda ? </h3>
+                <p> Fale com a gente pelo WhatsApp. Em poucos minutos você reserva seu horário, tira dúvidas e recebe
+                    atendimento próximo e acolhedor. </p>
+                <div class="btn-nav-contact">
+                    <div class="btn-agendar-desktop">
+                        <a href="#" class="wpp"> Agendar pelo Whatsapp </a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <a href="#" class="btn-service"> Conhecer serviços </a>
+                </div>
+            </section>
         </div>
-        <section id="agendar" class="agendar">
-            <h2 class="title-form">
-                Agenda
-            </h2>
-            <p class="subtitle-form">
-                Agende seu atendimento com praticidade e tenha um cuidado pensado para você.
-            </p>
-
-            <form>
-                <div class="input-group names">
-                    <div class="input-box">
-                        <label for="name"> Nome </label>
-                        <input type="text" class="name" id="name" placeholder="Nome">
-                    </div>
-                    <div class="input-box">
-                        <label for="lastname"> Sobrenome </label>
-                        <input type="text" class="lastname" id="lastName" placeholder="Sobrenome">
-                    </div>
-                </div>
-
-                <div class="input-group servicesAndEmail">
-                    <div class="input-box">
-                        <label for="name"> Telefone </label>
-                        <input type="tel" class="name" id="phone" placeholder="(61) 99999-9999">
-                    </div>
-                    <div class="input-box">
-                        <label for="lastname"> Serviço </label>
-                        <select name="agend" id="serviceForm">
-                            <option value="liso_saudavel"> Liso Saudavel </option>
-                            <option value="mega-hair"> Mega Hair </option>
-                            <option value="tranca"> Trança </option>
-                            <option value="escova"> Escova </option>
-                            <option value="hidra"> Hidradatação </option>
-                            <option value="outros"> Outros</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <label for="email"> Conte um pouco sobre você </label>
-                    <textarea name="descrEvent" id="descService" placeholder="Sua mensagem"></textarea>
-                </div>
-                <button class="btn-form" id="subtmit_button" type="submit">
-                    Enviar
-                </button>
-            </form>
-        </section>
     </main>
 
     <footer>
-        <img class="may" src="./src/image/may.png" alt="">
-        <div class="rede">
-            <p> Fale conosco e descubra o cuidado ideal para o seu cabelo.</p>
-            <div class="rede-icons  ">
-                <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+        <div class="container-footer">
+            <div class="title">
+                <h3>
+                    May Ramos
+                </h3>
+                <p class="text-footer"> Beleza capilar com técnica, delicadeza e atenção em cada detalhe. Atendimento no
+                    salão e a domicílio. </p>
+                    
+            </div>
+            <div class="contact">
+                <h2>
+                    Contato
+                </h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p> Agende seu horario </p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-pin"></i>
+                        <p> Atendimento no salão e a domicílio </p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <p> @instagram </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="hours">
+                <h2>
+                    Horario
+                </h2>
+                <div class="hours-disponible">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Ter — Sáb · 9h às 19h
+                        Dom · sob agendamento </p>
+                </div>
+                <div class="btn-agendar-desktop">
+                    <a href="#" class="wpp"> Agendar pelo Whatsapp </a>
+                </div>
             </div>
         </div>
-        <img class="ramos" src="./src/image/ramos.png" alt="">
+
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
