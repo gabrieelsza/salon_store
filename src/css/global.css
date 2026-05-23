@@ -79,3 +79,19 @@ select, input, button {
 span {
     color: var(--purple-800);
 }
+
+.btn-mobile {
+
+    button {
+        padding: .5rem .5rem;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: var(--purple-400);
+        font-size: 1.2rem;
+    
+        &:hover {
+            color: var(--purple-800);
+        }
+    } 
+}

@@ -8,8 +8,31 @@ header {
         align-items: center;
         padding-bottom: 1rem;
         box-shadow: 0 10px 17.3px 0 rgba(0, 0, 0, 0.25);
-        
-        .bar-nav-desktop, .btn-agendar-desktop {
+        position: relative;
+
+        .bar-nav-desktop {
+            width: 100%;
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            background-color: var(--white-200);
+            padding: 0;
+
+            li {
+                padding: 1rem;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-family: var(--lexend);
+                color: var(--purple-800);
+            }
+
+            &.show {
+                display: flex;
+            }
+        }
+
+        .btn-agendar-desktop {
             display: none;
         }
     }

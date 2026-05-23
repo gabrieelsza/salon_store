@@ -5,6 +5,10 @@
 .service-desc {
     text-align: center;
     margin: 8rem 0;
+    opacity: 0;
+    translate: -100%;
+    transition: 800ms ease;
+
 
     h2 {
         text-transform: uppercase;
@@ -26,6 +30,11 @@
         margin-top: 1rem;
     }
 
+}
+
+.service-desc.show {
+    opacity: 1;
+    translate: 0;
 }
 
 .service {
@@ -116,18 +125,27 @@
     gap: 4rem;
     border-radius: 2rem;
     margin-top: 4rem;
-
+    
+    
     h3 {
         color: var(--white-200);
         font-size: 1.5rem;
         font-weight: 600;
     }
+    
+    .container-differentiating {
+        overflow-x: auto;        
+    }
 
+    .container-differentiating::-webkit-scrollbar {
+        display: none;
+    }
+    
     .cards-desc-service {
         display: flex;
-        max-width: 280px;
+        flex: 0 0 5em;
         margin: 0 auto;
-        overflow: hidden;
+        animation: spin 10s infinite linear;
         
         .card-desc {
             display: flex;
@@ -158,6 +176,16 @@
                 text-align: center;
             }
         }
+    }
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -500%;
     }
 }
 
@@ -209,6 +237,9 @@
 .galeria {
     text-align: center;
     margin: 8rem 0;
+    opacity: 0;
+    translate: -100%;
+    transition: 800ms ease;
 
     h2 {
         text-transform: uppercase;
@@ -247,6 +278,11 @@
         }
 
     }
+}
+
+.galeria.show {
+    opacity: 1;
+    translate: 0;
 }
 
 .agendar {
@@ -290,22 +326,6 @@
         gap: 1rem;
         flex-direction: column;
         align-items: center;
-    }
-}
-
-select {
-    height: 6.2vh;
-    font-family: var(--poppins);
-    border-radius: .5rem;
-    border: none;
-    width: 100%;  
-    padding: 0 .7rem;
-    color: var(#ccc);
-
-    option {
-        color: var(#ccc);
-        font-family: var(--poppins);
-        font-weight: 300;
     }
 }
 
